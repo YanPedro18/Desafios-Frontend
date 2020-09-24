@@ -1,0 +1,390 @@
+body, h1, h2,h3, p, ul, li, a{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+    background-color: #E6EFF6;	
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* PELETA DE CORES 
+
+    Cor 1: #2BB3B1;
+    Cor 2: #4ABEBD;
+    Cor 3: #BFDF32;
+    Cor 4: #FFFFFF;
+    Cor 5: #C8CCD2;
+    Cor 5: #E6EFF6;
+
+		          */
+
+
+/*-------------------------CLASSES DO SITE---------------------*/
+
+.bg-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg-item-fundo{
+    width: 790px;
+    height: 320px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bg-item-texto{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.bg-item h1{
+  color: #2BB3B1;
+  padding: 20px 0;  
+}
+
+.bg-item h3{
+    color: #BFDF32;
+    font-size: 20px;
+}
+
+.bg-item p{
+    font-size: 18px;    
+    color: rgb(161, 161, 161);
+}
+
+
+/* QUADRADO VERDE ESCURO */
+
+
+.verde-escuro{
+    width: 395px;
+    height: 320px;
+    background-color: #2BB3B1;
+    border-bottom-left-radius: 10px;
+     
+}
+
+.verde-escuro p{
+    color: rgb(219, 219, 219);
+}
+
+.verde-escuro h1{
+   color: white;
+   font-size: 20px;
+}
+
+.verde-escuro span{
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    align-items: center;
+}
+
+.verde-escuro span > p{
+    margin-left: 20px;
+    
+}
+
+
+.verde-escuro a{    
+    padding: 15px 110px;
+    border-radius: 10px;
+    background-color: #BFDF32;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.button{
+    margin-top: 50px;
+}
+
+/* QUADRADO VERDE CLARO */
+
+.verde-claro{
+    width: 395px;
+    height: 320px;
+    background-color: #4ABEBD;
+    border-bottom-right-radius: 10px;
+}
+
+.verde-claro h1{
+   color: white;
+    font-size: 20px;
+}
+
+.verde-claro p{
+    font-weight: normal;
+    color: rgb(219, 219, 219);
+}
+
+
+.bg-item-box{
+    display: flex;    
+}
+
+.verde-escuro-text{
+    max-width: 310px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.verde-claro-text{
+    max-width: 310px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.button a{
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.267);
+}
+
+
+@media screen and (max-width: 1200px){
+    .bg-item-fundo{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .bg-item-texto{
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .bg-item h1{        
+        font-size: 20px;        
+      }
+
+      .bg-item h3{
+        font-size: 18px;
+        padding-bottom: 20px;
+      }
+
+      .bg-item p{
+        font-size: 15px;       
+        
+      }
+
+      .bg-item-fundo{
+        max-height: 250px; 
+      }
+
+      /* QUADRADOS VERDES */
+
+
+      .bg-item-box{
+          display: block;
+      }
+
+      .bg-item-box{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .verde-escuro{
+        width: 100%;
+        border-radius: 0;
+        height: 250px;
+    }
+
+    .verde-escuro-text{
+        max-width: 250px;
+        margin: 0 auto;
+        padding: 0;        
+    }
+
+    .verde-escuro a{    
+        padding: 13px 90px;
+        border-radius: 5px;
+        background-color: #BFDF32;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+    }
+
+    .verde-claro{
+        width: 100%;
+        border-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 250px;
+    }
+
+    .verde-claro-text h1{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .verde-claro-text{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .bg-item{
+        min-height: 800px;
+    }
+}
+
+/* TABLET */
+
+@media screen and (width: 768px), screen and (height: 1024px){
+    .bg-item-fundo{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .bg-item-texto{
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+    .bg-item-box{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .verde-escuro-text{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .verde-escuro-text{  
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .verde-escuro-text h1{
+        font-size: 24px;       
+        padding: 20px 0;
+    }
+
+    .button{        
+        margin: 30px 0;
+    }
+
+    .verde-escuro-text p{
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .verde-claro-text{  
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .verde-claro-text h1{
+        font-size: 30px;
+    }
+
+    .verde-claro-text p{
+        font-size: 17px;
+    }
+
+}
+
+/* IPAD PRO */
+
+@media screen and (width: 1024px), screen and (height: 1366px){
+    
+    .bg-item-fundo{
+        max-width: 900px;
+        min-height: 400px;
+    }
+
+    .bg-item-texto{
+        max-width: 800px;        
+     }
+
+     .bg-item-texto h1{
+        font-size: 70px;       
+     }
+
+     .bg-item-texto h3{
+        font-size: 40px;       
+     }
+
+     .bg-item-texto p{
+        font-size: 25px;       
+     }
+
+     /* QUADRADO VERDE */
+
+     .bg-item-box{
+        max-width: 900px;
+        min-height: 800px;
+    }
+
+
+    /* VERDE CLARO */
+
+    .verde-escuro{
+        min-height: 400px;
+    }
+
+    .verde-escuro-text{
+        max-width: 800px; 
+    }
+
+    .verde-escuro-text h1{
+        font-size: 70px;       
+     }
+
+     .verde-escuro-text span{
+        font-size: 70px;       
+     }
+
+     .verde-escuro-text span > p{
+        font-size: 35px;       
+     }
+
+     .verde-escuro-text p{
+        font-size: 35px;       
+     }
+
+     .verde-escuro-text a{
+        font-size: 35px;       
+     }
+
+     /* VERDE CLARO */
+
+     .verde-claro{
+        min-height: 400px;
+    }
+
+    .verde-claro-text{
+        max-width: 800px; 
+    }
+
+    .verde-claro-text h1{
+        font-size: 70px;       
+     }
+
+     .verde-claro-text p{
+        font-size: 30px;       
+     }
+}

@@ -1,0 +1,256 @@
+html, body, ul, li, a, p, h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --cor-principal: #D2872C;
+    --cor-secundaria: #766F68;
+}
+
+/* MOBILE FIRST */
+
+.container{
+    max-width: 320px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* MENU-HAMBURGUER */
+
+.icon{
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.um{
+    background-color: var(--cor-secundaria);
+    width: 25px;
+    height: 3px;
+    transition: 0.3s;
+}
+
+.dois{
+    background-color: var(--cor-secundaria);
+    width: 25px;
+    height: 3px;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+
+.tres{
+    background-color: var(--cor-secundaria);
+    width: 25px;
+    height: 3px;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+
+.quatro{
+    background-color: var(--cor-secundaria);
+    width: 25px;
+    height: 3px;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+
+/* LOGOMARCA */
+
+.logomarca{
+    font-size: 2.5rem;
+    color: var(--cor-principal);
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+/* MENU */
+
+.ativo.menu{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ativo.menu li+li{
+    margin-top: 20px;
+}
+
+.ativo.menu a{
+    color: white;
+    font-size: 2.0rem;
+}
+
+/* MENU-HAMBURGUER VIRA UM X */
+
+.icon-x .um{
+    opacity: 0;
+}
+
+.icon-x .dois{
+    transform: rotate(45deg) translate(4px, 4px);
+    background-color: white;
+}
+
+.icon-x .tres{
+    transform: rotate(-45deg) translate(-0px, -0px);
+    background-color: white;
+}
+
+.icon-x .quatro{
+    opacity: 0;
+}
+
+@media (max-width: 1024px){
+    .menu{
+        display: none;
+    }
+}
+
+/* BACKGROUND */
+
+.background-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bg-img{
+    order: -1;
+}
+
+.bg-img img{
+    max-width: 100%;
+}
+
+.bg-text h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin-top: 30px;
+}
+
+.bg-text p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin: 30px 0 50px 0;
+}
+
+.bg-text a{
+    background-color: var(--cor-principal);
+    padding: 15px 60px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+
+
+/* TABLET */
+
+@media (min-width: 600px){
+    .container{
+        max-width: 900px;
+    }
+
+    .bg-text h1{
+        font-size: 4.5rem;        
+    }
+    
+    .bg-text p{
+        font-size: 2.3rem;       
+    }
+
+    .bg-text a{
+        padding: 20px 70px;
+        font-size: 2.5rem;
+        font-weight: bold;
+        border-radius: 20px;
+        color: white;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1025px){
+    .container{
+        max-width: 1200px;
+    }
+
+    .logomarca{
+        font-size: 3.8rem;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .menu ul{
+        display: flex;
+    }
+
+    .menu li+li{
+        margin-left: 20px;
+    }
+
+    .menu a{
+        font-size: 2.5rem;
+        color: #4e4e4e;
+    }
+
+    /* BACKGROUND */
+
+    .background-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80vh;
+
+        text-align: left;
+    }
+
+    .bg-text{
+        position: relative;  
+        right: -120px;      
+        top: -90px;
+    }
+
+    .bg-text h1{
+        font-size: 7.0rem;       
+    }
+
+    .bg-img{
+        order: 0;        
+    }
+
+    .bg-img img{
+        max-width: 710px;
+    }
+}

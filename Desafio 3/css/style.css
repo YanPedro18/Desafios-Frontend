@@ -1,0 +1,286 @@
+body, h1, h2,h3, p, ul, li, a{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAFAFA;	
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* PELETA DE CORES 
+
+    Cor 1: #FAFAFA;
+    Cor 2: #FFFFFF;
+    Cor 3: #47D1D1;
+    Cor 4: #EBB167;
+    Cor 5: #549CF0;
+    Cor 6: #504F5F;
+
+		          */
+
+
+/*-------------------------CLASSES DO SITE---------------------*/
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.box-content h1{
+    color: #504f5f;
+    font-weight: 100;
+}
+
+.box-content h2{
+    color: #504f5f;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.box-content p{
+     color: #BCBCBE;
+     margin: 20px 0;
+}
+
+
+.box-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* VERDE */
+
+.caixa-verde{
+    box-shadow: 4px 4px 26px -1px rgb(221, 229, 240);
+    width: 350px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-top: 4px solid #47D1D1;
+    text-align: left;
+}
+
+.caixa-verde-texto{
+    padding: 30px;
+}
+
+.caixa-verde-texto h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.caixa-verde-texto p{
+    font-size: 15px;
+}
+
+.icon1{
+    font-size: 50px;
+    padding: 10px;
+    text-align: right;
+    color: #47D1D1;
+}
+
+/* VERMELHA */
+
+.caixa-vermelha{
+    box-shadow: 4px 4px 26px -1px rgb(221, 229, 240);
+    width: 350px;
+    height: 250px;
+    margin: 30px 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: left;
+    border-top: 4px solid #EA5453;
+}
+
+.caixa-vermelha-texto{
+    padding: 30px;
+}
+
+.caixa-vermelha-texto h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.caixa-vermelha-texto p{
+    font-size: 15px;
+}
+
+.icon2{
+    font-size: 50px;
+    padding: 10px;
+    text-align: right;
+    color: #EA5453;
+}
+
+/* LARANJA */
+
+.caixa-laranja{
+    box-shadow: 4px 4px 26px -1px rgb(221, 229, 240);
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: left;
+    border-top: 4px solid #EBB167;
+}
+
+.caixa-laranja-texto{
+    padding: 30px;
+}
+
+.caixa-laranja-texto h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.caixa-laranja-texto p{
+    font-size: 15px;
+}
+
+.icon3{
+    font-size: 50px;
+    padding: 10px;
+    text-align: right;
+    color: #EBB167;
+}
+
+/* AZUL */
+
+.caixa-azul{
+    box-shadow: 4px 4px 26px -1px rgb(221, 229, 240);
+    width: 350px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: left;
+    border-top: 4px solid #549CF0;
+}
+
+.caixa-azul-texto{
+    padding: 30px;
+}
+
+.caixa-azul-texto h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.caixa-azul-texto p{
+    font-size: 15px;
+}
+
+.icon4{
+    font-size: 50px;
+    padding: 10px;
+    text-align: right;
+    color: #549CF0;;
+}
+
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1200px){
+    .box{
+        max-width: 300px;
+        margin: 0 auto;        
+    }
+    
+    .box-content{
+        flex-direction: column;
+        width: 100%;
+        display: block;
+        padding-top: 65px;       
+    }
+
+    .caixa-vermelha{
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .caixa-laranja{
+        margin: 30px 0;
+        width: 100%;
+    }
+
+
+
+    /* FONTES E ESPAÇOS */
+
+    .box-content h1{
+        font-size: 20px;
+    }
+
+    .box-content h2{
+        font-size: 20px;
+    }
+
+    .box-content p{       
+        font-size: 13px;
+        padding-bottom: 30px;
+    }
+
+}
+
+
+/* TABLET */
+
+@media screen and (width: 768px), screen and (height: 1024px){
+    .box{
+        max-width: 480px;
+        margin: 0 auto;        
+    }
+
+    .caixa-verde{
+        width: 100%;
+    }
+
+    .caixa-azul{
+        width: 100%;
+    }
+
+      /* FONTES E ESPAÇOS */
+
+      .box-content h1{
+        font-size: 35px;
+    }
+
+    .box-content h2{
+        font-size: 35px;
+    }
+
+    .box-text p{       
+        font-size: 20px;
+    }
+
+    .box-item p{
+        font-size: 18px;
+        
+    }
+
+    .box-content p{        
+        margin: 0;
+   }
+
+   .icon1{
+       margin: 25px 0;
+   }
+
+
+}

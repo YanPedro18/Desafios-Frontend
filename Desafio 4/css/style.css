@@ -1,0 +1,301 @@
+body, h1, h2, p, ul, li, a{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;	
+    background-color: #F7F7FF;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* PELETA DE CORES 
+
+    Cor 1: #F7F7FF;
+    Cor 2: #9297EB;
+    Cor 3: #A1A5EE;
+    Cor 4: #6D71DF;
+    #72728E
+
+		          */
+
+
+/*-------------------------CLASSES DO SITE---------------------*/
+
+/* ONDAS DE FUNDO */
+
+.onda-cima{
+    position: absolute;
+    top: 0px;
+    right: 0px;   
+}
+
+.onda-baixo{
+    position: absolute;
+    bottom: 0px;  
+}
+
+/* BOTÃO */
+
+
+.inicio-h1 h1{
+    color: #72728E;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    color: #BAB9C7;
+}
+
+.fundo-button{
+    width: 55px;
+    height: 31px;
+    background-image: linear-gradient(to right,#A1A5EE,#6D71DF);
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+.fundo-button2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bola{
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+
+/* QUADROS */
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.inicio-h1{
+    margin-bottom: 40px;
+}
+
+
+.quadros-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadros-item{
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;    
+    text-align: center;
+    color: #4A4D5E;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 47px 0px rgb(212, 214, 253);
+    -moz-box-shadow: 10px 10px 47px 0px rgb(212, 214, 253);
+    box-shadow: 10px 10px 47px 0px rgb(212, 214, 253);
+}
+
+/* CONTAINER DO QUADRADO */
+
+.basic-container{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.preco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valor{
+    margin: 30px 0;
+}
+
+.valor p{
+    font-size: 60px;
+}
+
+.valor i{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.valor h1{
+    font-size: 20px;
+}
+
+.beneficios li{
+    border-top: 0.1px solid #ccc;
+    padding: 15px 0;
+}
+
+#border{
+    border-bottom: 1px solid #ccc; 
+}
+
+.beneficios p{
+    margin-top: 50px;
+    background-image: linear-gradient(to right,#A1A5EE,#6D71DF);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.beneficios a{
+    color: white;
+    display: block;
+    padding: 0 93px;  
+}
+
+/* QUADRO DO MEIO (ROXO) */
+
+.basic-container-roxo{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+
+
+.quadros-item-roxo{
+    width: 350px;
+    height: 500px;
+    background-image: linear-gradient(135deg,  rgba(159,165,239,1) 0%,rgba(138,142,233,1) 46%,rgba(109,113,223,1) 100%);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 47px 0px rgb(212, 214, 253);
+    -moz-box-shadow: 10px 10px 47px 0px rgb(212, 214, 253);
+    box-shadow: 10px 10px 47px 0px rgb(212, 214, 253);
+}
+
+.beneficios-roxo p{
+    margin-top: 50px;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CLASSES DO JS */
+
+.quadros-item-azul{
+    width: 350px;
+    height: 500px;
+    background-image: linear-gradient(to right,rgb(150, 2, 248),rgb(76, 32, 98));
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* CLASSES DO JS */
+
+.beneficios-roxo  li{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 15px 0;
+}
+
+#border-roxo{
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+.beneficios-roxo  a{
+    color: rgba(109,113,223,1);
+    display: block;
+    padding: 0 93px;    
+}
+
+@media screen and (max-width: 1200px){
+    .onda-cima{
+        display: none;
+    }
+
+    .onda-baixo{
+        display: none;
+    }
+
+    .quadros-item-roxo{
+        margin: 40px 0;
+    }
+
+    #quadros-item-espaco{
+        margin-bottom: 40px;
+    }
+
+    .quadros-container{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .basic-container{
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .basic-container-roxo{
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .quadros-item-roxo{
+        height: 450px;
+    }
+
+    .beneficios p{
+        font-size: 10px;
+    }
+
+    .beneficios-roxo p{
+        font-size: 10px;
+    }
+}
+
+
+.black{
+    background-color: rgb(27, 27, 27);
+}
+
+.semBox{
+    box-shadow: none;
+}
+
+.fundo-button3{
+    background-image: linear-gradient(to right,rgb(150, 2, 248),rgb(76, 32, 98));
+}
